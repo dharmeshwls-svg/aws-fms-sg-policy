@@ -1,0 +1,58 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "fms:PutPolicy",
+                "fms:GetPolicy", 
+                "fms:DeletePolicy",
+                "fms:ListPolicies",
+                "fms:GetAdminAccount",
+                "fms:AssociateAdminAccount",
+                "fms:DisassociateAdminAccount",
+                "fms:GetComplianceDetail",
+                "fms:GetViolationDetails"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "organizations:ListAccounts",
+                "organizations:DescribeOrganization",
+                "organizations:DescribeOrganizationalUnit",
+                "organizations:DescribeAccount",
+                "organizations:ListChildren",
+                "organizations:ListOrganizationalUnitsForParent"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "ec2:AuthorizeSecurityGroupIngress",
+                "ec2:AuthorizeSecurityGroupEgress", 
+                "ec2:CreateSecurityGroup",
+                "ec2:DeleteSecurityGroup",
+                "ec2:DescribeSecurityGroups",
+                "ec2:RevokeSecurityGroupIngress",
+                "ec2:RevokeSecurityGroupEgress",
+                "ec2:DescribeVpcs",
+                "ec2:CreateTags"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "config:DescribeConfigurationRecorders",
+                "config:DescribeDeliveryChannels",
+                "config:DescribeConfigRules",
+                "config:GetComplianceDetailsByConfigRule",
+                "config:GetComplianceDetailsByResource"
+            ],
+            "Resource": "*"
+        }
+    ]
+}
